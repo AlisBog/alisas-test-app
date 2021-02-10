@@ -14,7 +14,7 @@ const initialCounterState: CounterState = {
   count: 0
 }
 
-const count = (
+export const count = (
   state: CounterState = initialCounterState,
   action: Action | CounterActions
 ): CounterState => {
@@ -37,7 +37,7 @@ const initialSongsState: SongsState= {
   loading: false
 }
 
-const songs = (
+export const songs = (
   state: SongsState = initialSongsState,
   action: Action | SongsActions
 ): SongsState => {
@@ -59,4 +59,4 @@ export const createRootReducer = () => {
   })
 }
 
-export default count;
+//export default count;

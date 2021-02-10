@@ -34,7 +34,7 @@ export const loadSongsRequest = (): LoadSongRequestAction => ({
   type: SongsActionType.LOAD_REQUEST
 });
 
-export const loadSongsSuccess = (song:string): LoadSongSuccessAction => ({
+export const loadSongsSuccess = (song: string): LoadSongSuccessAction => ({
   type: SongsActionType.LOAD_SUCCESS,
   payload: {
     song

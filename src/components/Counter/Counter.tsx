@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { connect, useDispatch, useSelector} from 'react-redux';
+import React from 'react';
+import { connect, useDispatch } from 'react-redux';
 
 import { 
   resetCounter,
@@ -16,11 +16,12 @@ type CounterProps = {
   count: number
 }
 
-const Counter = ({count} : CounterProps) => {
+const Counter = ({count}: CounterProps) => {
 
+  debugger
   const dispatch = useDispatch();
   const classes = useStyles();
-  const [incrementAmount, setIncrementAmount] = useState(2);
+  //const [incrementAmount, setIncrementAmount] = useState(2);
 
   return (
     <div className={classes.container}>
